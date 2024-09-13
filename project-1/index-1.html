@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishita Fitness</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            color: white;
+            font-family: 'Playwrite MX';
+            font-style: normal;
+            font-weight: 100 400;
+            font-display: swap;
+        }
+        .left{
+            display: inline-block;
+            position:absolute;
+            left: 34px;
+            top: 20px;
+        }
+        .left img{
+            width: 40px;
+            filter: invert(100%);
+        }
+        .left div{
+            text-align: center;
+        }
+        .mid{
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+        }
+        .right{
+            position:absolute;
+            right: 0px;
+            top: 20px;
+            display: inline-block;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 13px;
+        }
+        .navbar li a{
+            color: wheat;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: black;
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 7px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 12px;
+            cursor: pointer;
+            font-family: 'Playwrite MX';
+            font-style: normal;
+            font-weight: 100 400;
+            font-display: swap;
+        }
+        .btn:hover{
+            background-color: silver;
+        }
+        .container{
+            margin: 80px 80px;
+            padding: 50px 50px;
+            width: 80%;
+            border-radius: 2px;
+            right: 100px
+        }
+        .form-group input{
+            border-radius: 20px;
+        }
+    </style>
+</head>
+ <body>
+  <header class="header">
+   <div class="left">
+     <img src="img/logo.png" alt="">
+     <div>Ishita Fitness</div>
+      </div>
+   <div class="mid">
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">About Us</a></li>
+        <li><a href="#">Fitness Calculator</a></li>
+        <li><a href="#">Contact Us</a></li>
+     </ul>
+      </div>
+   <div class="right">
+     <button class="btn">Call Us Now</button>
+     <button class="btn">Email Us Now</button>
+      </div>
+  </header>
+  <div class="container" style="text-align: center;">
+    <h1>Join the best gym of Ahmedabad now!!!</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Your Phone Number">
+        </div>
+       <button class="btn" style="position: relative;">Submit</button> 
+    </form>
+  </div>
+ </body>
+</html>
