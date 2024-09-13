@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&family=Sevillana&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+body {
+    font-family: 'Sevillana', cursive;
+    line-height: 1.6;
+} 
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 25%;
+    height: auto;
+    opacity: 0; 
+    animation: fadeInScale 2.5s ease forwards;
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 40px 50px;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar{
+    position: sticky;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    text-align: center; 
+}
+#navbar ul li a{
+    color:gold;
+    display: block;
+    padding: 4px 24px;
+    border-radius: 25px;
+    text-decoration: none;  
+    align-items: center;
+    text-align: center;
+}
+#navbar ul li a:hover{
+    color: silver;
+    background-color: aquamarine;
+}
+#Hero {
+    text-align: center;
+    padding: 20px;
+    position: relative; 
+    min-height: 100vh; 
+}
+#Hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../bg1.jpg);
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+    opacity: 0.4;
+}
+.h1-primary {
+    font-size: 2.5rem;
+    color: green;
+}
+#Hero p{
+    color: purple;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+#Hero img {
+    max-width: 80px;          
+    height: auto;              
+    display: inline-block;      
+    margin: 10px 15px;        
+    border-radius: 10px;       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+#Hero img:hover {
+    transform: scale(1.1);      
+}
+#Projects{
+    text-align: center;
+    padding: 25px;
+}
+#Projects p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkcyan;
+    font-size: 1.3rem;
+}
+#Projects a {
+    display: block;
+    margin: 10px 0;
+    color: royalblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#Projects a:hover {
+    text-decoration: underline;
+}
+#Me{
+    text-align: center;
+    padding: 25px;
+    position: relative;
+}
+#Me::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../bg2.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+    opacity: 0.4;
+}
+#Me h1{
+    color: powderblue;
+}
+#Me p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 6, 97);
+    font-size: 1.1rem;
+}
+#Me img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 25%;
+    height: auto;
+    opacity: 0; 
+    display: inline-block;   
+    animation: fadeInScale 2.5s ease forwards;
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+#Contact {
+    text-align: center;
+    padding: 20px;
+}
+#Contact h2{
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Contact p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: palevioletred;
+}
+#Contact img {
+    width: 40px;
+    vertical-align: middle;
+    margin-left: 200px;
+    animation: fadeInScale 2.5s ease forwards;
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+
+#contact-box{
+    background-image: url(../bg3.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    opacity: 0.8;
+}
+#contact-box {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color: black;
+    color: gold;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
